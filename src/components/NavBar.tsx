@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import { MenuRounded } from "@mui/icons-material";
 
 export default function NavBar() {
     // show hamburger when <lg
@@ -61,7 +61,7 @@ export default function NavBar() {
                     e.preventDefault();
                     setMenuOpen(!menuOpen);
                 }}>
-                    <MenuRoundedIcon className="w-full h-full" />
+                    <MenuRounded className="w-full h-full" />
                 </div>
                 {responsiveMenuSmall}
             </div>
